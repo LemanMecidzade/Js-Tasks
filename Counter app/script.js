@@ -15,4 +15,3 @@ decrement.addEventListener('click', function() {
     count--;
     number.textContent = count;
 });
-

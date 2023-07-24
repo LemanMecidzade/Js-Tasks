@@ -1,0 +1,37 @@
+.container {
+    max-width: 40rem;
+    margin:0 auto;
+    box-shadow: 0px 0px 43px 20px rgba(153, 153, 153, 0.26);
+    background-color: #badeff;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.result-box{
+    text-align: right;
+    line-height: 8rem;
+    height:8rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: #319eb6;
+    font-size: 2.5rem;
+}
+.buttons {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.button {
+    line-height: 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.num{
+    background-color: #ff8d8d;
+}
+.symbol{
+    background-color:#fffb7b;
+}
