@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+}
+#info{
+    color:white;
+    font-size: 1.5rem;
+}
+#board{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid white;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    border:1px solid white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.winning-cell{
+    background-color: blueviolet;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+}
+.cross{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    transform: rotate(45deg);
+}
+.cross:before,.cross:after{
+    content:'';
+    position: absolute;
+    background-color: white;
+}
+.cross:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+.cross:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
